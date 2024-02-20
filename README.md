@@ -1,1 +1,1 @@
-## coh-python
+## COH-python
