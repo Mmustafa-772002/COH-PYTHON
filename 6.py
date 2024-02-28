@@ -231,7 +231,7 @@ print(example.union(example1))
 
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
-example.update(example1)  # TODO complete next  
+example.update(example1)  
 print(example)
 
 
