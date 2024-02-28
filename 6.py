@@ -111,7 +111,7 @@ print("banana" in example)
 example.add("orange")
 print(example)
 
-# set - the set is a collection of unique elements and it is unordered and unindexed and the set is also mutable and the set is written with curly brackets.
+# set - the set is a collection of unique elements and it is unordered and un-indexed and the set is also mutable and the set is written with curly brackets.
 
 example = {"apple", "banana", "cherry"}
 print(example)
@@ -128,7 +128,7 @@ print(example)
 example.clear()
 print(example)
 
-# set -  it is the collection of unique elements and it is unordered and unindexed and it is mutable and it is written with curly brackets. and the set is also used to perform the mathematical operations like union, intersection, difference, symmetric difference, etc.
+# set -  it is the collection of unique elements and it is unordered and un-indexed and it is mutable and it is written with curly brackets. and the set is also used to perform the mathematical operations like union, intersection, difference, symmetric difference, etc.
 # the set methods
 
 # add()
@@ -153,7 +153,6 @@ print(example)
 # add()	-  Adds an element to the set
 example = {"apple", "banana", "cherry"}
 print(example)
-
 example.add("orange")
 print(example)
 print(type(example))
@@ -164,54 +163,67 @@ print(type(example))
 print(example)
 example.clear()
 print(example)
+
 # copy()	-  Returns a copy of the set
 example = {"apple", "banana", "cherry"}
 print(example)
 example1 = example.copy()
+
 # difference()	-  Returns a set containing the difference between two or more sets
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.difference(example1))
+
 # difference_update()	-  Removes the items in this set that are also included in another, specified set
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 example.difference_update(example1)
 example1.difference_update(example)
 print(example)
+
 # discard()	-  Remove the specified item
 example = {"apple", "banana", "cherry"}
 print(example)
 example.discard("apple")
 
+
 # intersection()	-  Returns a set, that is the intersection of two or more sets
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.intersection(example1))
+
 # intersection_update()	-  Removes the items in this set that are not present in other, specified set(s)
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.intersection_update(example1))
+
 # isdisjoint()	-  Returns whether two sets have a intersection or not
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.isdisjoint(example1))
+
 # issubset()	-  Returns whether another set contains this set or not
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.issubset(example1))
+
 # issuperset()	-  Returns whether this set contains another set or not
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.issuperset(example1))
+
 # pop()	-  Removes an element from the set
 example = {"apple", "banana", "cherry"}
 print(example)
 example.pop()
 print(example)
+
 # remove()	-  Removes the specified element
 example = {"apple", "banana", "cherry"}
 print(example)
 example.remove("apple")
+print(example.symmetric_difference(example1))
+
 # symmetric_difference()	-  Returns a set with the symmetric differences of two sets
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
@@ -222,19 +234,19 @@ print(example.symmetric_difference(example1))
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.symmetric_difference_update(example1))
+
 # union()	-  Return a set containing the union of sets
 
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
 print(example.union(example1))
+
 # update()	-  Update the set with another set, or any other iterable
 
 example = {"apple", "banana", "cherry"}
 example1 = {"google", "microsoft", "apple"}
-example.update(example1)  
+example.update(example1)
 print(example)
 
-
-
-
-
+# you cannot add list in to the set because the list is mutable and the set is immutable and the set is also used to perform the mathematical operations like union, intersection, difference, symmetric difference, etc.
+# we can not add dictionary in to the set because the dictionary is mutable and the set is immutable and the set is also used to perform the mathematical operations like union, intersection, difference, symmetric difference, etc.

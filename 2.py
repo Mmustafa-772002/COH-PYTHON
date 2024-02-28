@@ -76,6 +76,7 @@ c = 45.5
 # 3. str
 # 4. none
 # 5. bool
+# 6. complex 
 
 a = " jhon"
 b = 453
