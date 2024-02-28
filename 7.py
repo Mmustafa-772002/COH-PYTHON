@@ -175,10 +175,7 @@ s = 45
 assert s > 10, "s is less than 10"
 print("s is greater than 10")
 
-# if else with assert statement: in this case, the assert statement is used to check the multiple conditions in the program.
 
-s = 45
-assert s < 10, "s is less than 10"
-print("s is greater than 10")
+
 
 
