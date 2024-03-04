@@ -13,6 +13,12 @@ while i <= j:
     i = i+1
 print("done ")
 
+fruit = ["apple", "banana", "cherry"]
+i = 0 
+while i < len(fruit):
+    print(fruit[i])
+    i = i+1
+
 # multiple conditions in the program
 a = int(input("enter the starting value : "))
 b = int(input("enter the end value: "))
@@ -39,8 +45,99 @@ while a<=b:
 print("done") 
     
     
-    # for loop - for loop is used to execute the code block until the condition is true.
+# for loop - for loop is used to execute the code block until the condition is true.
 # syntax -
 # for variable in range():
 #     code block
 #
+
+# q -  print the numbers from 1 to 10 using for loop
+for i in range(1,11):
+    print(str(i))
+print("done")
+
+# q -  print the numbers from 10 to 1 using for loop
+for i in range(10,0, -1):
+    print(str(i))
+print("done")
+
+for i in range(1, 11,2):
+    print(str(i))
+print("done")
+
+for i in range(2,20 ,2):
+    print(str(i))
+print("done")
+
+# for loop in else statement - the else statement is used to execute the code block once the condition is false.
+
+for i in range(1, 11):
+    print(str(i))
+else:
+    print("done the stmt is executed")
+#   it is the optional else in the for loop  
+
+# break - the break statement is used to terminate the loop once the condition is true.
+
+for i in range(10):
+    print(i)
+    if i == 5:
+        break
+else:
+    print("done")
+
+# continue - the continue statement is used to skip the current iteration and continue with the next iteration.
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i)
+else:
+    print("done")
+
+# pass - the pass statement is used to execute the empty code block.
+
+for i in range(10):
+    pass
+else:
+    print("done")
+    
+for i in range(10):
+    if i == 5:
+        pass
+    while i == 5:
+        print(i)
+        break
+else:
+    print("done")
+    
+# nested loops - the nested loops are the loops that are used inside the other loop.
+# q - print the table from 1 to 10 using nested loops
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(str(i) + " * " + str(j) + " = " + str(i*j))
+    print("done")
+    
+# q - print the table from 1 to 10 using nested loops
+num = int(input("enter the number: "))
+for i in range(1, 11):
+    print(str(num) + " * " + str(i) + " = " + str(num*i))
+
+l1 =["harry", "sohan", "sachin", "mohan"]
+for name in l1:
+    if name.startswith("s"):
+        print("hello " + name)
+    else:
+        print("bye " + name)
+        
+# q - cheack the number is prime or not
+num = int(input("enter the number: "))
+prime = True
+for i in range(2, num):
+    if num % i == 0:
+        prime = False
+        break
+if prime:
+    print("the number is prime")
+else:
+    print("the number is not prime")
