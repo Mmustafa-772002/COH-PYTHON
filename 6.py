@@ -1,3 +1,26 @@
+my_dict = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+    
+}
+print(" my name is ",my_dict["name"])
+print(" my age is ",my_dict["age"])
+print(" my city is ",my_dict["city"])
+
+
+# input in the dictionry 
+new_dict = {}
+a = input("enter the name : ")
+b = input("enter the age : ")
+c = input("enter the city : ")
+new_dict["name"] = a
+new_dict["age"] = b
+new_dict["city"] = c
+print(new_dict)
+
+
+
 # dictionary and set - the dictionary is a data type in python that is used to store key-value pairs. A set is a collection of unique elements.
 # clear()
 # copy()
