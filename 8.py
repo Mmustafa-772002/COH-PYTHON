@@ -130,14 +130,63 @@ for name in l1:
     else:
         print("bye " + name)
         
-# q - cheack the number is prime or not
+# q - check the number is prime or not
 num = int(input("enter the number: "))
-prime = True
-for i in range(2, num):
-    if num % i == 0:
+prime = True 
+for i in range (2,num):
+    if num%i==0:
         prime = False
         break
 if prime:
     print("the number is prime")
 else:
     print("the number is not prime")
+
+# q - to check the number is factorial or not
+num = int(input("enter the number: "))
+fact = 1
+for i in range(1,num+1):
+    fact =fact*1
+print("the factorial of the number is " + str(fact))    
+
+# q - print a star pattern 
+n = 5
+for i in range(n):
+    print("*" * (i+1))
+    
+i = int(input("enter the number of star to be printed: "))
+
+for i in range(i):
+    print("*" *(i+1))
+    
+
+i=int(input("enter the number of star to be printed: "))
+for i in range(i):
+    print("*" * (i+1))
+    
+# pyramid star pattern
+i = int(input("enter the number of star to be printed: "))
+for j in range(i):
+    print(" " * (i-j-1) + "*" * (2*j+1))
+    
+    # sqare star pattern
+i = int(input("enter the number of star to be printed: "))
+for j in range(i):
+    print("*" * i)
+
+
+# to make a square star pattern with the hollow center
+
+i = int(input("enter the number of star to be printed: "))
+for j in range(i):
+    if j ==0 or j ==i-1:
+        print("* " *i)
+    else:
+        print("*"+" " *(i-2)+"*")
+        
+# multiplication table in reverse order
+a = int(input("enter the start number: "))
+b = int(input("enter the end number: "))
+c = int(input("enter the multiplication number: "))
+for i in range(b-a+1):
+    print(str(c)+"*"+str(b-i)+"="+str(c*(b-i))   )
