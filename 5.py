@@ -1,6 +1,14 @@
 #tuples - the tuples are containers that can hold a number of other objects.
 # the tuple is also called as immutable list
 # the tuples are ordered and unchangeable
+# the tuple is written with the round brackets
+# |-------|------------|----------------------------|
+# | index | function   |     example                |
+# |-------|------------|----------------------------|
+# | 1     | count      | example.count(5)           |
+# | 2     | index      | example.index(7)           |
+# |-------|------------|----------------------------|
+
 example = (1,2,3,4,5,6,7,8,9,10)
 print(example)
 # the indexing in the tuple starts from 0

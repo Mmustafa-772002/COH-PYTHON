@@ -19,18 +19,24 @@ print(example[2])
 example[1] = "blackcurrant"
 print(example)
 
-# we can print the diffrent data types in the list
-# append()	
-# clear()	
-# copy()	
-# count()	
-# extend()	
-# index()	
-# insert()	
-# pop()	
-# remove()	
-# reverse()	
-# sort()	
+# we can print the different data types in the list
+# |-------|------------|----------------------------|
+# | index | function   |     example                |
+# |-------|------------|----------------------------|
+# | 1     | append     | example.append(11)         |
+# | 2     | clear      | example.clear()            |
+# | 3     | copy       | example.copy()             |
+# | 4     | count      | example.count(5)           |
+# | 5     | extend     | example.extend(example1)   |
+# | 6     | index      | example.index(7)           |
+# | 7     | insert     | example.insert(1, 12)      |
+# | 8     | pop        | example.pop()              |
+# | 9     | remove     | example.remove(5)          |
+# | 10    | reverse    | example.reverse()          |
+# | 11    | sort       | example.sort()             |
+# | 12    | sort       | example.sort(reverse=True) |
+# | 13    | sort       | example.sort(reverse=False)|
+# |-------|------------|----------------------------|
 
 example = ["apple", "banana", "cherry", 1, 2, 3]
 print(example)

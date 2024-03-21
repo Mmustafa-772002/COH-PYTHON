@@ -8,7 +8,7 @@
 # portable and linuX windows mac support
 # high level language
 
-# the python code is saved at the eextension of .py file
+# the python code is saved at the extension of .py file
 
 print(" the python is the high level language ")
 
@@ -38,7 +38,7 @@ print(" the python is the high level language ")
 # user defined module - the modules that are created by the user
 
 # python --version
-# to cheack the version of the python
+# to check the version of the python
 
 # the terminal that can run the simple python code
 
@@ -52,26 +52,26 @@ print(" the python is the high level language ")
 
 # this is the multiple line comment in the python
 # q -  print twinkle twinkle little star in python
-print("twinle twinle little star")
+print("twinkle twinkle little star")
 print("how i wonder what you are")
 print("up above the world so high")
 print("like a diamond in the sky")
 
 # the string is in the double quotes
-# to sperate the line we can use the \n
+# to separate the line we can use the \n
 
 # the \t is used to give the tab space in the python
 print(
-    "twinle twinle little star \n \t how i wonder what you are \n \t \t up above the world so high \n \t \t like a diamond in the sky"
+    "twinkle twinkle little star \n \t how i wonder what you are \n \t \t up above the world so high \n \t \t like a diamond in the sky"
 )
 
-# the \n is used to sperate the line
+# the \n is used to separate the line
 print(
-    "twinle twinle little star \t how i wonder what you are \t up above the world so high \t like a diamond in the sky"
+    "twinkle twinkle little star \t how i wonder what you are \t up above the world so high \t like a diamond in the sky"
 )
 
 
-# q - wirte the table of the 5 in print stmt
+# q - write the table of the 5 in print stmt
 print(5 * 1)
 print(5 * 2)
 print(5 * 3)
@@ -84,5 +84,4 @@ print(5 * 9)
 print(5 * 10)
 
 import os
-
 print(os.listdir())

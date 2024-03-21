@@ -22,17 +22,21 @@ print(new_dict)
 
 
 # dictionary and set - the dictionary is a data type in python that is used to store key-value pairs. A set is a collection of unique elements.
-# clear()
-# copy()
-# fromkeys()
-# get()
-# items()
-# keys()
-# pop()
-# popitem()
-# setdefault()
-# update()
-# values()
+# |-------|------------|------------------------|
+# | index | function   |     example            |
+# |-------|------------|------------------------|
+# | 1     | clear      | example.clear()        |
+# | 2     | copy       | example.copy()         |
+# | 3     | fromkeys   | example.fromkeys()     |
+# | 4     | get        | example.get()          |
+# | 5     | items      | example.items()        |
+# | 6     | keys       | example.keys()         |
+# | 7     | pop        | example.pop()          |
+# | 8     | popitem    | example.popitem()      |
+# | 9     | setdefault | example.setdefault()   |
+# | 10    | update     | example.update()       |
+# | 11    | values     | example.values()       |
+# |-------|------------|------------------------|
 
 # clear() - 	Removes all the elements from the dictionary
 example = {"brand": "Ford", "model": "Mustang", "year": 1964}
@@ -153,6 +157,29 @@ print(example)
 
 # set -  it is the collection of unique elements and it is unordered and un-indexed and it is mutable and it is written with curly brackets. and the set is also used to perform the mathematical operations like union, intersection, difference, symmetric difference, etc.
 # the set methods
+
+# |-------|------------------------------|-----------------------------------------------|
+# | index | function                     |     example                                   |
+# |-------|------------------------------|-----------------------------------------------|
+# | 1     | add                          | example.add("orange")                         |
+# | 2     | clear                        | example.clear()                               |
+# | 3     | copy                         | example.copy()                                |
+# | 4     | difference                   | example.difference()                          |
+# | 5     | difference_update            | example.difference_update()                   |
+# | 6     | discard                      | example.discard("apple")                      |
+# | 7     | intersection                 | example.intersection()                        |
+# | 8     | intersection_update          | example.intersection_update()                |
+# | 9     | isdisjoint                   |  example.isdisjoint()                          |
+# | 10    | issubset                     | example.issubset()                            |
+# | 11    | issuperset                   | example.issuperset()                          |
+# | 12    | pop                          | example.pop()                                 |
+# | 13    | remove                       | example.remove("apple")                       |
+# | 14    | symmetric_difference         | example.symmetric_difference()              |
+# | 15    | symmetric_difference_update  | example.symmetric_difference_update()|
+# | 16    | union                        | example.union()                               |
+# | 17    | update                       | example.update()                              |
+# |-------|-----------------------------|-----------------------------------------------|
+
 
 # add()
 # clear()

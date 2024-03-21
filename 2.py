@@ -1,4 +1,4 @@
-# varibles and data types
+# variables and data types
 # variable - a variable is give to a memory location to store the data
 # it is the container that is  used to store the data
 a = " harry"
@@ -14,6 +14,46 @@ c = 45.5
 # it is the reserved word
 # the list of the keywords in the python
 # there are 35 keywords in the python
+# |-------|--------------|------------------|
+# | index |  keyword     |      example     |
+# |-------|--------------|------------------|
+# | 1     |  false       |  False           |
+# | 2     |  none        |  None            |
+# | 3     |  true        |  True            |
+# | 4     |  and         |  a and b         |
+# | 5     |  as          |  import a as b   |
+# | 6     |  assert      |  assert a > b    |
+# | 7     |  break       |  break           |
+# | 8     |  class       |  class a         |
+# | 9     |  continue    |  continue        |
+# | 10    |  def         |  def a           |
+# | 11    |  del         |  del a           |
+# | 12    |  elif        |  elif a > b      |
+# | 13    |  else        |  else            |
+# | 14    |  except      |  except          |
+# | 15    |  finally     |  finally         |
+# | 16    |  for         |  for a in b      |
+# | 17    |  from        |  from a import b |
+# | 18    |  global      |  global a        |
+# | 19    |  if          |  if a > b        |
+# | 20    |  import      |  import a        |
+# | 21    |  in          |  in a            |
+# | 22    |  is          |  a is b          |
+# | 23    |  lambda      |  lambda a        |
+# | 24    |  nonlocal    |  nonlocal a      |
+# | 25    |  not         |  not a           |
+# | 26    |  or          |  a or b          |
+# | 27    |  pass        |  pass            |
+# | 28    |  raise       |  raise           |
+# | 29    |  return      |  return a        |
+# | 30    |  try         |  try             |
+# | 31    |  while       |  while a > b     |
+# | 32    |  with        |  with a as b     |
+# | 33    |  yield       |  yield a         |
+# | 34    |  print       |  print a         |
+# | 35    |  input       |  input a         |
+# |-------|--------------|------------------|
+
 # 1. false - it is the keyword that is used to represent the false value
 # 2. none - it is the keyword that is used to represent the null value
 # 3. true - it is the keyword that is used to represent the true value
@@ -51,9 +91,58 @@ c = 45.5
 # 35. input - it is the keyword that is used to take the input from the user
 
 # identifiers - the name of the variable, function, class, module, etc is called the identifier
+# |-------|------------------|------------------|
+# | index |  identifier      |      example     |
+# |-------|------------------|------------------|
+# | 1     |  variable        |  a = 10          |
+# | 2     |  function        |  def a():        |
+# | 3     |  class           |  class a:        |
+# | 4     |  module          |  import a        |
+# | 5     |  object          |  a = A()         |
+# | 6     |  package         |  import a.b      |
+# | 7     |  method          |  a.b()           |
+# | 8     |  constant        |  PI = 3.14       |
+# | 9     |  attribute       |  a.b             |
+# | 10    |  argument        |  a(b)            |
+# | 11    |  keyword         |  if,else,for     |
+# | 12    |  expression      |  a + b           |
+# | 13    |  statement       |  a = 10          |
+# | 14    |  block           |  {a = 10}        |
+# | 15    |  indentation     |  4 space         |
+# | 16    |  suite           |  a = 10          |
+# | 17    |  loop            |  for a in b:     |
+# | 18    |  conditional     |  if a > b:       |
+# | 19    |  control         |  break,continue  |
+# | 20    |  exception       |  try,except      |
+# | 21    |  comment         |  # comment       |
+# | 22    |  docstring       |  '''docstring''' |
+# | 23    |  literal         |  10,"hello",3.14 |
+# | 24    |  operator        |  +,-,*,/,%       |
+# | 25    |  delimiter       |  :,(,),{,}       |
+# |-------|------------------|------------------|
+
 # class - class is a blueprint for the object
 # data type - the type of the data that is stored in the variable
 # there are 14 types of data types in the python
+# | ------- | ------------------ | ------------------ |
+# | index   |  data type         |      example       |
+# | ------- | ------------------ | ------------------ |
+# | 1       |  int               |  a = 10            |
+# | 2       |  float             |  a = 10.5          |
+# | 3       |  str               |  a = "hello"       |
+# | 4       |  list              |  a = [1,2,3,4,5]   |
+# | 5       |  tuple             |  a = (1,2,3,4,5)   |
+# | 6       |  set               |  a = {1,2,3,4,5}   |
+# | 7       |  dict              |  a = {1:"one"}     |
+# | 8       |  bool              |  a = True          |
+# | 9       |  complex           |  a = 3 + 5j        |
+# | 10      |  bytes             |  a = b"hello"      |
+# | 11      |  bytearray         |  a = bytearray(10) |
+# | 12      |  range             |  a = range(10)     |
+# | 13      |  frozenset         |  a = frozenset(a)  |
+# | 14      |  None              |  a = None          |
+# | ------- | ------------------ | ------------------ |
+
 # 1. int - it is the data type that is used to store the integer value
 # 2. float - it is the data type that is used to store the floating value
 # 3. str - it is the data type that is used to store the string value
