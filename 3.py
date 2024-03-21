@@ -14,7 +14,6 @@
 # example - "jhon's"
 
 
-
 # indexing in the string  - the process of the accessing the character of the string using the index number
 # the index number of the string always starts from the 0
 
@@ -29,7 +28,7 @@ print(name[3])
 print(name[4])
 print(name[5])
 print(name[0:5])
-print(name[1:3 ])
+print(name[1:3])
 print(len(name))
 print(name[:3])
 print(name[3:])
@@ -39,7 +38,7 @@ print(name[0:5:2])
 print(name[0::2])
 print(name[::2])
 print(name[::])
-#  functions in python 
+#  functions in python
 # |-------|------------|------------------------|
 # | index | function   |     example            |
 # |-------|------------|------------------------|
@@ -120,5 +119,3 @@ print(" ".join(story.split("a", 2)))
 
 # 15. isalnum - the function that is used to check the string is alphanumeric or not
 print(story.isalnum())
-
-

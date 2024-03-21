@@ -23,6 +23,7 @@ print(percentage, percentage1)
 def add(a, b):
     return a + b
 
+
 def percentage(marks):
     p = ((marks[0] + marks[1] + marks[2] + marks[3] + marks[4]) / 500) * 100
     return p
@@ -44,7 +45,7 @@ print(percentage1, percentage2)
 
 # my_function(name=input("enter the name: "))
 
-# to print the name in the function   
+# to print the name in the function
 # def hello(name ):
 #     print("hello "+name )
 
@@ -57,7 +58,7 @@ print(percentage1, percentage2)
 
 # hii(name=input("enter the name:"))
 
-# types of the function in the python 
+# types of the function in the python
 # 1. built in function
 # 2. user defined function
 
@@ -92,7 +93,7 @@ x = ascii("My name is Ståle")
 print(x)
 
 # bin() - returns the binary version of the number
-# example = 
+# example =
 bin(36)
 # bool() - returns the boolean value of the object
 # example
@@ -116,27 +117,31 @@ print(callable(a))
 a = chr(97)
 print(a)
 
+
 # classmethod() - converts a method into a class method
 class MyClass:
     @classmethod
     def my_method(cls):
         pass
 
+
 a = MyClass.my_method()
 
 # compile() - returns the specified source as an object, ready to be executed
-a = compile('print(55)', 'test', 'eval')
+a = compile("print(55)", "test", "eval")
 exec(a)
 
 # complex() - returns a complex number
 a = complex(3, 5)
 print(a)
 
+
 # delattr() - deletes the specified attribute from an object
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
 
 harry = Person("Harry", 25)
 delattr(harry, "age")
@@ -154,13 +159,13 @@ a = divmod(5, 2)
 print(a)
 
 # enumerate() - takes a collection (e.g. a tuple) and returns it as an enumerate object
-x = ('apple', 'banana', 'cherry')
+x = ("apple", "banana", "cherry")
 y = enumerate(x)
 print(list(y))
 
 # eval() - evaluates and executes an expression
 x = 1
-print(eval('x + 1'))
+print(eval("x + 1"))
 
 # exec() - executes the specified code (or object)
 # example :
@@ -170,15 +175,19 @@ exec(x)
 # filter() - use a filter function to exclude items in an iterable
 # example :
 ages = [5, 12, 17, 18, 24, 32]
+
+
 def myFunc(x):
     if x < 18:
         return False
     else:
         return True
+
+
 adults = filter(myFunc, ages)
 for x in adults:
     print(x)
-    
+
 # float() - returns a floating point number
 # example :
 a = float(3)
@@ -195,13 +204,16 @@ print(txt.format(age))
 a = frozenset({"apple", "banana", "cherry"})
 print(a)
 
+
 # getattr() - returns the value of the specified attribute
 # example :
 class Person:
     name = "John"
     age = 36
     country = "Norway"
-x = getattr(Person, 'age')
+
+
+x = getattr(Person, "age")
 print(x)
 
 # globals() - returns the current global symbol table as a dictionary
@@ -209,13 +221,16 @@ print(x)
 x = globals()
 print(x)
 
+
 # hasattr() - returns true if the specified object has the specified attribute
 # example :
 class Person:
     name = "John"
     age = 36
     country = "Norway"
-x = hasattr(Person, 'age')
+
+
+x = hasattr(Person, "age")
 print(x)
 
 # hash() - returns the hash value of a specified object
@@ -253,12 +268,15 @@ print(a)
 x = isinstance(5, int)
 print(x)
 
+
 # issubclass() - returns true if the specified object is a subclass of the specified object
 # example :
 class Person:
     name = "John"
     age = 36
     country = "Norway"
+
+
 x = issubclass(Person, object)
 print(x)
 
@@ -284,11 +302,14 @@ print(a)
 x = locals()
 print(x)
 
+
 # map() - returns the specified iterator with the specified function applied to each item
 # example :
 def myfunc(n):
     return len(n)
-x = map(myfunc, ('apple', 'banana', 'cherry'))
+
+
+x = map(myfunc, ("apple", "banana", "cherry"))
 print(list(x))
 
 # max() - returns the largest item in an iterable
@@ -330,7 +351,7 @@ print(f.read())
 
 # ord() - converts a character into the unicode
 # example :
-a = ord('h')
+a = ord("h")
 print(a)
 
 # pow() - returns the value of x to the power of y
@@ -342,21 +363,28 @@ print(a)
 # example :
 print("Hello, World!")
 
+
 # property() - gets, sets, deletes a property
 # example :
 class Person:
     def __init__(self, name):
         self._name = name
+
     def get_name(self):
         return self._name
+
     def set_name(self, value):
         self._name = value
+
     def del_name(self):
         del self._name
+
     name = property(get_name, set_name, del_name)
-p = Person('Adam')
+
+
+p = Person("Adam")
 print(p.name)
-p.name = 'John'
+p.name = "John"
 print(p.name)
 del p.name
 
@@ -385,13 +413,16 @@ print(a)
 a = set(("apple", "banana", "cherry"))
 print(a)
 
+
 # setattr() - sets the value of the specified attribute of the specified object
 # example :
 class Person:
     name = "John"
     age = 36
     country = "Norway"
-setattr(Person, 'age', 40)
+
+
+setattr(Person, "age", 40)
 print(Person.age)
 
 # slice() - returns a slice object
@@ -404,13 +435,17 @@ print(a)
 a = sorted([36, 5, -12, 9, -21])
 print(a)
 
+
 # staticmethod() - converts a method into a static method
 # example :
 class Person:
     age = 25
+
     @staticmethod
     def hello():
         print("Hello, I am 25 years old")
+
+
 Person.hello()
 
 # str() - returns a string object
@@ -423,18 +458,24 @@ print(a)
 a = sum([1, 2, 3])
 print(a)
 
+
 # super() - returns an object that represents the parent class
 # example :
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
         self.lastname = lname
+
     def printname(self):
         print(self.firstname, self.lastname)
+
+
 class Student(Person):
     def __init__(self, fname, lname, year):
         super().__init__(fname, lname)
         self.graduationyear = year
+
+
 x = Student("Mike", "Olsen", 2019)
 print(x.graduationyear)
 
@@ -448,12 +489,15 @@ print(a)
 a = type(3)
 print(a)
 
+
 # vars() - returns the __dict__ property of an object
 # example :
 class Person:
     name = "John"
     age = 36
     country = "Norway"
+
+
 x = vars(Person)
 print(x)
 
@@ -467,25 +511,38 @@ print(tuple(x))
 # __import__() - imports the specified module
 # example :
 import math
-x = __import__('math', globals(), locals(), [], 0)
+
+x = __import__("math", globals(), locals(), [], 0)
 print(x)
+
 
 # user defined function - the function which are defined by the user are called user defined function
 # example :
 def my_function():
     print("hello")
+
+
 my_function()
 
+
 def my_function(name):
     print("hello " + name)
+
+
 my_function("harry")
 
-def my_function(name):
-    print("hello " + name)
-my_function(name="h arry")
 
 def my_function(name):
     print("hello " + name)
+
+
+my_function(name="h arry")
+
+
+def my_function(name):
+    print("hello " + name)
+
+
 my_function(input("enter the name: "))
 
 # recursion - a function calling itself is called recursion. it is used to solve the complex problem by dividing it into smaller problems.
@@ -495,5 +552,5 @@ my_function(input("enter the name: "))
 n = 5
 product = 1
 for i in range(n):
-    product = product * (i+1)
+    product = product * (i + 1)
 print(product)

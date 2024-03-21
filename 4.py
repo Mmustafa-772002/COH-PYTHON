@@ -1,6 +1,6 @@
 # list and tuples
 # the list are containers that can hold a number of other objects.
-# this is oredered and changeable
+# this is ordered and changeable
 example = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(example)
 # the indexing in the list starts from 0
@@ -143,15 +143,15 @@ b = input("Enter the string to be added in the list: ")
 example.append(b)
 print(example)
 
-f1  = input("enter the fruit name f1 : ")
-f2  = input("enter the fruit name f2 : ")
+f1 = input("enter the fruit name f1 : ")
+f2 = input("enter the fruit name f2 : ")
 f3 = input("enter the fruit name f3 : ")
 f4 = input("enter the fruit name f4 : ")
-f5  = input("enter the fruit name f5 : ")
-f6  = input("enter the fruit name f6 : ")
-f7  = input("enter the fruit name f7 : ")
-f8  = input("enter the fruit name f8 : ")
-f9  = input("enter the fruit name f9 : ")
+f5 = input("enter the fruit name f5 : ")
+f6 = input("enter the fruit name f6 : ")
+f7 = input("enter the fruit name f7 : ")
+f8 = input("enter the fruit name f8 : ")
+f9 = input("enter the fruit name f9 : ")
 
 myLIST = [f1, f2, f3, f4, f5, f6, f7, f8, f9]
 print(myLIST)

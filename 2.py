@@ -165,7 +165,7 @@ c = 45.5
 # 3. str
 # 4. none
 # 5. bool
-# 6. complex 
+# 6. complex
 
 a = " jhon"
 b = 453
@@ -307,17 +307,17 @@ b = input("enter your name :")
 print(b, type(b))
 
 
-# q -  add two number 
+# q -  add two number
 a = 20
 b = 30
 c = a + b
-print("the sum of a and b is : " ,c)
+print("the sum of a and b is : ", c)
 
 # q - remainder of the two number
 a = 20
 b = 30
 c = a % b
-print("the remainder of a and b is : " ,c)
+print("the remainder of a and b is : ", c)
 
 # q- take the input from the user and print the type of the input
 a = input("enter the value :")
@@ -330,16 +330,16 @@ print(a == b)
 print(a != b)
 print(a > b)
 print(a < b)
-print(a >= b)   
+print(a >= b)
 print(a <= b)
 
-#  q - average of two number 
+#  q - average of two number
 a = 20
 b = 30
 c = (a + b) / 2
-print("the average of a and b is : " ,c)
+print("the average of a and b is : ", c)
 
 # q - square of the number
 a = 20
-b = a ** 2
-print("the square of a is : " ,b)
+b = a**2
+print("the square of a is : ", b)
