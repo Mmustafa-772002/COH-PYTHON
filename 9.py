@@ -482,11 +482,18 @@ my_function("harry")
 
 def my_function(name):
     print("hello " + name)
-my_function(name="harry")
+my_function(name="h arry")
 
 def my_function(name):
     print("hello " + name)
 my_function(input("enter the name: "))
-def my_function(name):
-    print("hello " + name)
-my_function(name=input("enter the name: "))
+
+# recursion - a function calling itself is called recursion. it is used to solve the complex problem by dividing it into smaller problems.
+
+# example :
+
+n = 5
+product = 1
+for i in range(n):
+    product = product * (i+1)
+print(product)
