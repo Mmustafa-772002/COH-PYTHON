@@ -162,3 +162,33 @@ content = content.replace("hello", "monkey")
 
 with open("demofile.txt", "w") as f:
     f.write(content)
+
+
+# to replace words in files 
+words = ["mote", "kaddu", "kele", "aam", "tarbooj"]
+with open("demofile.txt") as f:
+    content = f.read()
+for word in words:
+    content = content.replace(word, "*****")
+    with open("demofile.txt", "w") as f:
+        f.write(content)
+
+# to detect the word in log files 
+with open("log.txt") as f :
+    content =f.read().lower()
+if "this" in content.lower():
+    print("yes")
+else:
+    print("no")
+    
+# to check the word in the file in line number 
+content = True
+i = 1
+with open("log.txt") as f:
+    while content:
+        content = f.readline()
+        if "python" in content.lower():
+            print(content)
+            print("yes")
+            print(i)
+        i += 1
