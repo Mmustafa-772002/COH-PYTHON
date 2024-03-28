@@ -164,7 +164,7 @@ with open("demofile.txt", "w") as f:
     f.write(content)
 
 
-# to replace words in files 
+# to replace words in files
 words = ["mote", "kaddu", "kele", "aam", "tarbooj"]
 with open("demofile.txt") as f:
     content = f.read()
@@ -173,15 +173,15 @@ for word in words:
     with open("demofile.txt", "w") as f:
         f.write(content)
 
-# to detect the word in log files 
-with open("log.txt") as f :
-    content =f.read().lower()
+# to detect the word in log files
+with open("log.txt") as f:
+    content = f.read().lower()
 if "this" in content.lower():
     print("yes")
 else:
     print("no")
-    
-# to check the word in the file in line number 
+
+# to check the word in the file in line number
 content = True
 i = 1
 with open("log.txt") as f:
@@ -192,3 +192,43 @@ with open("log.txt") as f:
             print("yes")
             print(i)
         i += 1
+
+# copy the content from one file to another file
+with open("demofile.txt") as f:
+    content = f.read()
+
+with open("copy.txt", "w") as f:
+    f.write(content)
+
+# to check the content of the file is same or not
+f1 = "copy.txt"
+f2 = "demofile.txt"
+
+with open(f1) as file:
+    f1 = file.read()
+
+with open(f2) as file:
+    f2 = file.read()
+
+if f1 == f2:
+    print("yes")
+else:
+    print("no")
+#  to wipe the content of the file
+with open("demofile.txt", "w") as file:
+    file.write()
+    file.close()
+
+# to rename the file 
+oldname="demofile.txt"
+newname="newfile.txt"
+import os
+os.rename(oldname,newname)
+
+# or 
+oldname="demofile.txt"
+newname="newfile.txt"
+with open(oldname) as file:
+    content = file.read()
+with open(newname, "w") as file:
+    file.write(content)

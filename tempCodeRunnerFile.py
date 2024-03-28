@@ -1,3 +1,7 @@
-file = open('highscore.txt','x')
-# file.write(str(game()))
-# file.close()
+content = True
+i = 1
+with open("log.txt") as f:
+    while content:
+        content = f.readline()
+        if "python" in content.lower():
+            print(content)
