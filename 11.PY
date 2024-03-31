@@ -219,15 +219,16 @@ with open("demofile.txt", "w") as file:
     file.write()
     file.close()
 
-# to rename the file 
-oldname="demofile.txt"
-newname="newfile.txt"
+# to rename the file
+oldname = "demofile.txt"
+newname = "newfile.txt"
 import os
-os.rename(oldname,newname)
 
-# or 
-oldname="demofile.txt"
-newname="newfile.txt"
+os.rename(oldname, newname)
+
+# or
+oldname = "demofile.txt"
+newname = "newfile.txt"
 with open(oldname) as file:
     content = file.read()
 with open(newname, "w") as file:

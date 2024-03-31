@@ -1,7 +1,8 @@
-content = True
-i = 1
-with open("log.txt") as f:
-    while content:
-        content = f.readline()
-        if "python" in content.lower():
-            print(content)
+
+class employee:
+    company = "google"
+    salary = 100
+    location= "delhi"
+    
+e = employee()
+print(e.salary)
