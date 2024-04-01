@@ -182,10 +182,99 @@ print(e.salary)
 
 # hierarchical inheritance : when a class is inherited by multiple classes then it is called hierarchical inheritance
 
-# TODO : add example of hierarchical inheritance
+# TODO : add example of hierarchical inheritance -- done
+
+
+# Define the Animal class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} is eating.")
+
+
+# Define the Dog class, which inherits from Animal
+class Dog(Animal):
+    def bark(self):
+        print(f"{self.name} is barking.")
+
+
+# Define the Cat class, which inherits from Animal
+class Cat(Animal):
+    def meow(self):
+        print(f"{self.name} is meowing.")
+
+
+# Define the Labrador class, which inherits from Dog
+class Labrador(Dog):
+    def fetch(self):
+        print(f"{self.name} is fetching.")
+
+
+# Create an instance of the Dog class
+dog = Dog("Buddy")
+dog.eat()  # Call the eat method of the Animal class
+dog.bark()  # Call the bark method of the Dog class
+
+# Create an instance of the Cat class
+cat = Cat("Whiskers")
+cat.eat()  # Call the eat method of the Animal class
+cat.meow()  # Call the meow method of the Cat class
+
+# Create an instance of the Labrador class
+labrador = Labrador("Max")
+labrador.eat()  # Call the eat method of the Animal class
+labrador.bark()  # Call the bark method of the Dog class
+labrador.fetch()  # Call the fetch method of the Labrador class
+
+
 # hybrid inheritance : when a class is inherited by multiple classes and those classes are inherited by other classes then it is called hybrid inheritance
 
-# TODO : add example of hybrid inheritance
+
+# Define the Animal class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+
+# Define the Dog class, which inherits from Animal
+class Dog(Animal):
+    def bark(self):
+        print(f"{self.name} is barking")
+
+
+# Define the Cat class, which inherits from Animal
+class Cat(Animal):
+    def meow(self):
+        print(f"{self.name} is meowing")
+
+
+# Define the Labrador class, which inherits from Dog
+class Labrador(Dog):
+    def fetch(self):
+        print(f"{self.name} is fetching")
+
+
+# Create an instance of the Dog class
+dog = Dog("Buddy")
+dog.eat()  # Call the eat method of the Animal class
+dog.bark()  # Call the bark method of the Dog class
+
+# Create an instance of the Cat class
+cat = Cat("Whiskers")
+cat.eat()  # Call the eat method of the Animal class
+cat.meow()  # Call the meow method of the Cat class
+
+# Create an instance of the Labrador class
+labrador = Labrador("Max")
+labrador.eat()  # Call the eat method of the Animal class
+labrador.bark()  # Call the bark method of the Dog class
+labrador.fetch()  # Call the fetch method of the Labrador class
+
 
 # method overloading : Method overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java.
 
@@ -311,7 +400,6 @@ e[1] = "s"
 print(e.name)
 
 # TODO : fix the above code to work correctly  -- done
-
 
 # __delitem__() : deletes the item of the object
 # example :
@@ -603,26 +691,30 @@ class Complex:
     def __init__(self, r, i):
         self.real = r
         self.imaginary = i
-        
+
     # Overload the addition operator (+) to add two complex numbers
-    def __add__(self,c):
-        return Complex(self.real + c.real , self.imaginary + c.imaginary)
-    
+    def __add__(self, c):
+        return Complex(self.real + c.real, self.imaginary + c.imaginary)
+
     # Overload the multiplication operator (*) to multiply two complex numbers
-    def __mul__(self,c):
-        return Complex(self.real*c.real - self.imaginary*c.imaginary, self.real*c.imaginary + self.imaginary*c.real)
-    
+    def __mul__(self, c):
+        return Complex(
+            self.real * c.real - self.imaginary * c.imaginary,
+            self.real * c.imaginary + self.imaginary * c.real,
+        )
+
     # Override the string representation of the complex number
     def __str__(self):
         return f"{self.real} + {self.imaginary}i"
+
 
 # Create two complex numbers
 c1 = Complex(1, 4)
 c2 = Complex(3, 4)
 
 # Perform addition and multiplication of complex numbers
-print(c1+c2)
-print(c1*c2)
+print(c1 + c2)
+print(c1 * c2)
 
 
 # method overriding : Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already provided by its parent class. When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
