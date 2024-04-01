@@ -401,6 +401,7 @@ print(e.name)
 
 # TODO : fix the above code to work correctly  -- done
 
+
 # __delitem__() : deletes the item of the object
 # example :
 class employee:
@@ -716,5 +717,61 @@ c2 = Complex(3, 4)
 print(c1 + c2)
 print(c1 * c2)
 
+# write a class vector representing a vector of n dimension. overload the + and * operator which calculates the sum and dot product of them.
+
+
+class vector:
+    def __init__(self, vec):
+        self.vec = vec
+
+    def __str__(self):
+        str1 = ""
+        index = 0
+        for i in self.vec:
+            str1 += f"{i} a{index} +"
+            index += 1
+        return str1
+        return str1[:-1]
+
+    def __add__(self,vec2):
+        newList = []
+        for i in range(len(self.vec)):
+            newList.append(self.vec[i] + vec2.vec[i])
+        return vector(newList)
+    
+    def __mul__(self,vec2):
+        sum = 0
+        for i in range(len(self.vec)):
+            sum += self.vec[i] * vec2.vec[i]
+        return sum
+
+v1 = vector([1, 4, 6])
+v2 = vector([1, 6, 9])
+print(v1)
+print(v1+v2)
+print(v1)
+print(v1*v2)
 
 # method overriding : Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already provided by its parent class. When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+
+# Define the parent class
+class Shape:
+    def area(self):
+        pass
+
+# Define the child class
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    # Override the area method
+    def area(self):
+        return self.length * self.width
+
+# Create an instance of the Rectangle class
+rect = Rectangle(5, 3)
+print(rect.area())  # Output: 15
+
+
+# ----------------------------------------END----------------------------------------------
